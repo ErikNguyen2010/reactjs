@@ -9,6 +9,9 @@ import HandleEvent from './Components/HandleEvent/HandleEvent';
 import StateDemo from './Components/StateDemo/StateDemo';
 import StyleComponent from './StyleComponent/StyleComponent';
 import RenderArray from './RenderArray/RenderArray';
+import DemoProps from './Props/DemoProps';
+import ShoesShop from './Props/ShoesShop/ShoesShop';
+import BTXemChiTiet from './Props/BTXemChiTiet/BTXemChiTiet';
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
       {/* <HandleEvent/> */}
       {/* <StateDemo/> */}
       {/* <StyleComponent/> */}
-      <RenderArray/>
+      {/* <RenderArray/> */}
+      {/* <DemoProps/> */}
+      {/* <ShoesShop/> */}
+      <BTXemChiTiet/>
     </div>
   );
 }
