@@ -13,6 +13,11 @@ export default class Phone extends Component {
                             <button onClick={() =>{
                                 this.props.newPhone(product)
                             }} className="btn btn-success">xem chi tiet</button>
+                            <button onClick={() =>{
+                              this.props.themGioHang(product)
+                            }} className="btn btn-danger ml-2">
+                              <i  className='fa fa-shopping-cart mr-2'></i> Thêm giỏ hàng
+                              </button>
                         </div>
              </div>
 

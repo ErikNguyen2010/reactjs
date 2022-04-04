@@ -12,6 +12,8 @@ import RenderArray from './RenderArray/RenderArray';
 import DemoProps from './Props/DemoProps';
 import ShoesShop from './Props/ShoesShop/ShoesShop';
 import BTXemChiTiet from './Props/BTXemChiTiet/BTXemChiTiet';
+import GioHang from './Props/BTXemChiTiet/GioHang';
+import TangGiamSoLuong from './Components/DemoRedux/TangGiamSoLuong/TangGiamSoLuong';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
       {/* <RenderArray/> */}
       {/* <DemoProps/> */}
       {/* <ShoesShop/> */}
-      <BTXemChiTiet/>
+      {/* <BTXemChiTiet/> */}
+      <TangGiamSoLuong/>
     </div>
   );
 }
