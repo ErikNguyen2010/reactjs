@@ -14,6 +14,8 @@ import ShoesShop from './Props/ShoesShop/ShoesShop';
 import BTXemChiTiet from './Props/BTXemChiTiet/BTXemChiTiet';
 import GioHang from './Props/BTXemChiTiet/GioHang';
 import TangGiamSoLuong from './Components/DemoRedux/TangGiamSoLuong/TangGiamSoLuong';
+import BTChonXeRedux from './Components/DemoRedux/TangGiamSoLuong/BTChonXeRedux/BTChonXeRedux';
+import BTGioHangRedux from './Components/DemoRedux/BTGioHangRedux/BTGioHangRedux';
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
       {/* <DemoProps/> */}
       {/* <ShoesShop/> */}
       {/* <BTXemChiTiet/> */}
-      <TangGiamSoLuong/>
+      {/* <TangGiamSoLuong/> */}
+      {/* <BTChonXeRedux/> */}
+      <BTGioHangRedux/>
     </div>
   );
 }

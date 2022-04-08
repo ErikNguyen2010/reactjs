@@ -1,10 +1,17 @@
 import {combineReducers, createStore} from 'redux'
+import { gioHangReducer } from './reducers/gioHangReducer';
+import { stateNumber } from './reducers/numberReducer';
+import { stateImgCar } from './reducers/stateImgCarReducer';
 const rootReducer = combineReducers({
     //các state dự án sẽ dc khai báo tại đây
 
-    stateNumber: (state = 1) =>{
-        return state
-    }
+    stateNumber: stateNumber,
+
+    stateImgCar: stateImgCar,
+
+    gioHangReducer: gioHangReducer,
+
+
 });
 
 
