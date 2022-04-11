@@ -10,7 +10,9 @@ class SanPhamRedux extends Component {
                     <div className="card-body">
                         <p>{sanPham.tenSP}</p>
                         <p>{sanPham.giaBan}</p>
-                        <button className='btn btn-primary'>xem chi tiết</button>
+                        <button onClick={() =>{
+                          this.props.xemChiTiet(sanPham)
+                        }} className='btn btn-primary'>xem chi tiết</button>
                         <button onClick={() =>{
                             this.props.themGioHang(sanPham)
                         }} className="btn btn-danger ml-3  ">thêm giỏ hàng</button>
@@ -30,6 +32,13 @@ const mapDispatchToProps = (dispatch) =>{
                 sanPham
             };
             dispatch(action)
+        },
+        xemChiTiet : (sanPham) =>{
+          const action ={
+            type: "XEM_CHI_TIET",
+            sanPham
+          };
+          dispatch(action)
         }
     }
 }

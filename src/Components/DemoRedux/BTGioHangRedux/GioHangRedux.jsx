@@ -1,12 +1,24 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 class GioHangRedux extends Component {
+    tinhTong = () =>{
+        let tongSoLuong = this.props.stateGioHang.reduce ((soLuong, spGH) =>{
+            return soLuong + spGH.soLuong
+            
+        }, 0)
+
+        let tongTien = this.props.stateGioHang.reduce((tt, spGH) =>{
+            let tong = spGH.giaBan * spGH.soLuong;
+            return tt+ tong
+        }, 0) 
+        return `${tongSoLuong}  -  ${tongTien.toLocaleString()} VND`
+    }
   render() {
     return (
       <div>
           <h2 className='text-center'>Giỏ hàng</h2>
           <div className="text-right">
-              <span className="text-danger font-weight-bold">giỏ hàng (0)</span>
+              <span className="text-danger font-weight-bold">giỏ hàng ({this.tinhTong()})</span>
           </div>
           <table className="table">
               <thead>
@@ -29,9 +41,13 @@ class GioHangRedux extends Component {
                            <img src={product.hinhAnh} alt="..." width={50} height={50} />
                        </td>
                        <td>
-                           <button className="btn btn-primary mr-2">+</button>
+                           <button onClick ={() =>{
+                               this.props.tangGiamSoLuong(product.maSP, 1)
+                           }} className="btn btn-primary mr-2">+</button>
                            {product.soLuong}
-                           <button className="btn btn-primary ml-2">-</button>
+                           <button onClick ={() =>{
+                               this.props.tangGiamSoLuong(product.maSP, -1)
+                           }} className="btn btn-primary ml-2">-</button>
                        </td>
                        <td>
                            {product.giaBan}
@@ -69,7 +85,15 @@ const mapDispatchToProps = (dispatch) =>{
                 maSPClick
             }
             dispatch(action);
-        }
+        },
+
+        tangGiamSoLuong: (maSanPham, soLuong) =>{
+            const action = {
+                type: "TANG_GIAM_SO_LUONG",
+                maSanPham,soLuong
+            }
+            dispatch(action);
+        },
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps )(GioHangRedux);

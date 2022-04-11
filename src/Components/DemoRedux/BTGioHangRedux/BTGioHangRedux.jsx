@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import GioHangRedux from './GioHangRedux'
+import SanPhamChiTietRedux from './SanPhamChiTietRedux'
 import SanPhamRedux from './SanPhamRedux'
 
 export default class BTGioHangRedux extends Component {
@@ -39,28 +40,7 @@ export default class BTGioHangRedux extends Component {
               })}
           </div>
           <div className="row mt-5">
-              <div className="col-6">
-                    <h3 className='text-center'>iphone</h3>
-                    <img src="./img/applephone.jpg" alt="..." className='w-100' />
-              </div>
-              <div className="col-6">
-                    <table className="table">
-                        <tbody>
-                            <tr>
-                                <th>màn hình</th>
-                                <th>màn hình</th>
-                            </tr>
-                            <tr>
-                                <th>he dieu hành</th>
-                                <th>màn hình</th>
-                            </tr>
-                            <tr>
-                                <th>màn hình</th>
-                                <th>màn hình</th>
-                            </tr>
-                        </tbody>
-                    </table>
-              </div>
+              <SanPhamChiTietRedux/>
           </div>
       </div>
     )

@@ -16,6 +16,7 @@ import GioHang from './Props/BTXemChiTiet/GioHang';
 import TangGiamSoLuong from './Components/DemoRedux/TangGiamSoLuong/TangGiamSoLuong';
 import BTChonXeRedux from './Components/DemoRedux/TangGiamSoLuong/BTChonXeRedux/BTChonXeRedux';
 import BTGioHangRedux from './Components/DemoRedux/BTGioHangRedux/BTGioHangRedux';
+import GameTaiXiu from './Components/DemoRedux/GameTaiXiu/GameTaiXiu';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <BTXemChiTiet/> */}
       {/* <TangGiamSoLuong/> */}
       {/* <BTChonXeRedux/> */}
-      <BTGioHangRedux/>
+      {/* <BTGioHangRedux/> */}
+      <GameTaiXiu/>
     </div>
   );
 }
