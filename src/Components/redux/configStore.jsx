@@ -4,6 +4,7 @@ import { stateNumber } from './reducers/numberReducer';
 import { stateImgCar } from './reducers/stateImgCarReducer';
 import { xemChiTietReducer } from './reducers/xemChiTietReducer';
 import { gameXucXacReducer }  from './reducers/gameXucXacReducer'
+import {quanLyNguoiDungReducer} from './reducers/QuanLyNguoiDungReducer'
 const rootReducer = combineReducers({
     //các state dự án sẽ dc khai báo tại đây
 
@@ -17,6 +18,9 @@ const rootReducer = combineReducers({
 
 
     gameXucXacReducer: gameXucXacReducer,
+
+
+    quanLyNguoiDungReducer,quanLyNguoiDungReducer
 
 
 });

@@ -44,6 +44,11 @@ export default class HeaderHome extends Component {
                 Register <span className="sr-only">(current)</span>
               </NavLink>
             </li>
+            <li className="nav-item active">
+              <NavLink activeStyle={{borderRadius: "10px"}} activeClassName="bg-white text-dark" className="nav-link" to="/btqlnd">
+                react form <span className="sr-only">(current)</span>
+              </NavLink>
+            </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Link
