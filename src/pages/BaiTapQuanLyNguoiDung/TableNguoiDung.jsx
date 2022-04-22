@@ -33,10 +33,7 @@ class TableNguoiDung extends Component {
                  this.props.xoaNguoiDung(nguoiDung.taiKhoan)
                }} className="btn btn-danger mr-2">Xóa</button>
                <button onClick={() =>{
-                 const action ={
-                   type : "SUA_NGUOI_DUNG",
-                   nguoiDung
-                 }
+                 this.props.suaNguoiDung(nguoiDung)
                }} className="btn btn-primary ml-2">Sửa</button>
              </td>
            </tr>
@@ -62,6 +59,13 @@ const mapDispatchToProps = (dispatch) =>{
         const action ={
           type: "XOA_NGUOI_DUNG",
           taiKhoan
+        }
+        dispatch(action)
+      },
+      suaNguoiDung: (nguoiDung) =>{
+        const action ={
+          type : "SUA_NGUOI_DUNG",
+          nguoiDung
         }
         dispatch(action)
       }   
