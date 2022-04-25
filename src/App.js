@@ -29,6 +29,10 @@ import Detail from "./pages/Detail/Detail";
 import Search from "./pages/Search/Search";
 import BaiTapQuanLyNguoiDung from "./pages/BaiTapQuanLyNguoiDung/BaiTapQuanLyNguoiDung";
 import LifeCycle from "./pages/LifeCycle/LifeCycle";
+import DemoUseState from "./Hooks/DemoUseState";
+import DemoUseEffect from "./Hooks/DemoUseEffect/DemoUseEffect";
+import DemoApiRCC from "./pages/API/DemoAPI/DemoApiRCC";
+import DemoApiRFC from "./pages/API/DemoAPI/DemoApiRFC";
 
 function App() {
   return (
@@ -49,6 +53,11 @@ function App() {
         <Route exact path={"/search"} component={Search} />
         <Route exact path={"/lifecycle"} component={LifeCycle} />
         <Route exact path={"/btqlnd"} component={BaiTapQuanLyNguoiDung} />
+        {/* react hook */}
+        <Route exact path={"/usestate"} component={DemoUseState} />
+        <Route exact path={"/useeffect"} component={DemoUseEffect} />
+        <Route exact path={"/apircc"} component={DemoApiRCC} />
+        <Route exact path={"/apirfc"} component={DemoApiRFC} />
         <Route exact path={"/"} component={Home} />
       </Switch>
     </BrowserRouter>

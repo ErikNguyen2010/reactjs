@@ -69,8 +69,17 @@ export default class HeaderHome extends Component {
                 <NavLink className="dropdown-item" to="/lifecycle">
                   Lifecycle
                 </NavLink>
-                <NavLink className="dropdown-item" to="#">
-                  Hooks
+                <NavLink className="dropdown-item" to="/usestate">
+                  useState
+                </NavLink>
+                <NavLink className="dropdown-item" to="/useeffect">
+                  useEffect
+                </NavLink>
+                <NavLink className="dropdown-item" to="/apirfc">
+                  To do Api RFC
+                </NavLink>
+                <NavLink className="dropdown-item" to="/apircc">
+                  To do Api RCC
                 </NavLink>
               </div>
             </li>
