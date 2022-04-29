@@ -81,6 +81,15 @@ export default class HeaderHome extends Component {
                 <NavLink className="dropdown-item" to="/apircc">
                   To do Api RCC
                 </NavLink>
+                <NavLink className="dropdown-item" to="/customhooks">
+                Custom Hooks
+                </NavLink>
+                <NavLink className="dropdown-item" to="/reduxhook">
+                Redux Hook
+                </NavLink>
+                <NavLink className="dropdown-item" to="/apireduxhook">
+                Api redux hook
+                </NavLink>
               </div>
             </li>
           </ul>

@@ -33,7 +33,9 @@ import DemoUseState from "./Hooks/DemoUseState";
 import DemoUseEffect from "./Hooks/DemoUseEffect/DemoUseEffect";
 import DemoApiRCC from "./pages/API/DemoAPI/DemoApiRCC";
 import DemoApiRFC from "./pages/API/DemoAPI/DemoApiRFC";
-
+import CustomHooks from "./Hooks/CustomHooks/CustomHooks";
+import TangGiamSoLuongHook from "./Components/DemoReduxHook/TangGiamSoLuong/TangGiamSoLuongHook";
+import DemoApiReduxHook from "./pages/API/DemoAPI/DemoApiReduxHook";
 function App() {
   return (
     <BrowserRouter>
@@ -58,6 +60,9 @@ function App() {
         <Route exact path={"/useeffect"} component={DemoUseEffect} />
         <Route exact path={"/apircc"} component={DemoApiRCC} />
         <Route exact path={"/apirfc"} component={DemoApiRFC} />
+        <Route exact path={"/customhooks"} component={CustomHooks} />
+        <Route exact path={"/reduxhook"} component={TangGiamSoLuongHook} />
+        <Route exact path={"/apireduxhook"} component={DemoApiReduxHook} />
         <Route exact path={"/"} component={Home} />
       </Switch>
     </BrowserRouter>
