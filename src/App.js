@@ -36,6 +36,10 @@ import DemoApiRFC from "./pages/API/DemoAPI/DemoApiRFC";
 import CustomHooks from "./Hooks/CustomHooks/CustomHooks";
 import TangGiamSoLuongHook from "./Components/DemoReduxHook/TangGiamSoLuong/TangGiamSoLuongHook";
 import DemoApiReduxHook from "./pages/API/DemoAPI/DemoApiReduxHook";
+import DemoUseCallback from "./Hooks/DemoUseCallback/DemoUseCallback";
+import DemoUseMemo from "./Hooks/DemoUseMemo/DemoUseMemo";
+import DemoUseRef from "./Hooks/DemoUseRef/DemoUseRef";
+import ToDoListApp from "./pages/ReduxThunk/ToDoListApp";
 function App() {
   return (
     <BrowserRouter>
@@ -63,6 +67,10 @@ function App() {
         <Route exact path={"/customhooks"} component={CustomHooks} />
         <Route exact path={"/reduxhook"} component={TangGiamSoLuongHook} />
         <Route exact path={"/apireduxhook"} component={DemoApiReduxHook} />
+        <Route exact path={"/usecallback"} component={DemoUseCallback} />
+        <Route exact path={"/usememo"} component={DemoUseMemo} />
+        <Route exact path={"/useref"} component={DemoUseRef} />
+        <Route exact path={"/todolistapp"} component={ToDoListApp} />
         <Route exact path={"/"} component={Home} />
       </Switch>
     </BrowserRouter>

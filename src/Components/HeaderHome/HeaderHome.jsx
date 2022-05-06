@@ -63,6 +63,23 @@ export default class HeaderHome extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
+                Redux thunk middleware
+              </a>
+              <div className="dropdown-menu" aria-labelledby="dropdownId">
+                <NavLink className="dropdown-item" to="/todolistapp">
+                  To do list app
+                </NavLink>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Lifecycle - Hooks
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
@@ -89,6 +106,15 @@ export default class HeaderHome extends Component {
                 </NavLink>
                 <NavLink className="dropdown-item" to="/apireduxhook">
                 Api redux hook
+                </NavLink>
+                <NavLink className="dropdown-item" to="/usecallback">
+                Use Callback
+                </NavLink>
+                <NavLink className="dropdown-item" to="/usememo">
+                Use Memo
+                </NavLink>
+                <NavLink className="dropdown-item" to="/useref">
+                Use Ref
                 </NavLink>
               </div>
             </li>
